@@ -7,7 +7,7 @@ import legacy from '@vitejs/plugin-legacy';
 
 import PurgeIcons from 'vite-plugin-purge-icons';
 
-import { configHtmlPlugin } from './html';
+// import { configHtmlPlugin } from './html';
 import { configPwaConfig } from './pwa';
 import { configMockPlugin } from './mock';
 import { configCompressPlugin } from './compress';
@@ -35,8 +35,8 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   // @vitejs/plugin-legacy
   VITE_LEGACY && isBuild && vitePlugins.push(legacy());
 
-  // vite-plugin-html
-  vitePlugins.push(configHtmlPlugin(viteEnv, isBuild));
+  // // vite-plugin-html
+  // vitePlugins.push(configHtmlPlugin(viteEnv, isBuild));
 
   // vite-plugin-svg-icons
   vitePlugins.push(configSvgIconsPlugin(isBuild));
@@ -56,12 +56,12 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   // rollup-plugin-visualizer
   vitePlugins.push(configVisualizerConfig());
 
-  //vite-plugin-theme
+  // vite-plugin-theme
   vitePlugins.push(configThemePlugin());
 
   // The following plugins only work in the production environment
   if (isBuild) {
-    //vite-plugin-imagemin
+    // vite-plugin-imagemin
     VITE_USE_IMAGEMIN && vitePlugins.push(configImageminPlugin());
 
     // rollup-plugin-gzip

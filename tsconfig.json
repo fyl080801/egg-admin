@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -28,6 +28,8 @@
     }
   },
   "include": [
+    "app/**/*.ts",
+    "config/**/*.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
@@ -36,5 +38,5 @@
     "types/**/*.ts",
     "mock/**/*.ts"
   ],
-  "exclude": ["node_modules", "dist", "**/*.js"]
+  "exclude": ["node_modules", "dist", "**/*.js", "typings/**/*.d.ts", "test/**/*.ts"]
 }

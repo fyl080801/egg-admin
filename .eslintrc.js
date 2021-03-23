@@ -21,6 +21,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'eslint-config-egg/typescript',
   ],
   rules: {
     '@typescript-eslint/ban-ts-ignore': 'off',
@@ -72,5 +73,7 @@ module.exports = {
         math: 'always',
       },
     ],
+    'array-bracket-spacing': 'off',
+    'comma-dangle': 'off',
   },
 };

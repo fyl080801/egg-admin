@@ -13,3 +13,9 @@ dist
 .local
 /bin
 Dockerfile
+**/*.d.ts
+node_modules/
+output/
+
+/test
+/typings

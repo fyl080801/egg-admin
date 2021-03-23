@@ -1,7 +1,7 @@
 {
   "typescript.tsdk": "./node_modules/typescript/lib",
   "volar.tsPlugin": true,
-  "volar.tsPluginStatus": false,
+  "volar.tsPluginStatus": true,
   //===========================================
   //============= Editor ======================
   //===========================================
@@ -114,28 +114,28 @@
     "html",
     "vue"
   ],
-  // ===========================================
-  // ================ Vetur ====================
-  // ===========================================
-  "vetur.experimental.templateInterpolationService": true,
-  "vetur.format.options.tabSize": 2,
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.ts": "prettier-tslint",
-  "vetur.format.defaultFormatter.js": "prettier",
-  "vetur.languageFeatures.codeActions": false,
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-expand-multiline"
-    },
-    "prettier": {
-      "eslintIntegration": true,
-      "arrowParens": "always",
-      "semi": false,
-      "singleQuote": true
-    }
-  },
+  // // ===========================================
+  // // ================ Vetur ====================
+  // // ===========================================
+  // "vetur.experimental.templateInterpolationService": true,
+  // "vetur.format.options.tabSize": 2,
+  // "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // "vetur.format.defaultFormatter.scss": "prettier",
+  // "vetur.format.defaultFormatter.css": "prettier",
+  // "vetur.format.defaultFormatter.ts": "prettier-tslint",
+  // "vetur.format.defaultFormatter.js": "prettier",
+  // "vetur.languageFeatures.codeActions": false,
+  // "vetur.format.defaultFormatterOptions": {
+  //   "js-beautify-html": {
+  //     "wrap_attributes": "force-expand-multiline"
+  //   },
+  //   "prettier": {
+  //     "eslintIntegration": true,
+  //     "arrowParens": "always",
+  //     "semi": false,
+  //     "singleQuote": true
+  //   }
+  // },
   "javascript.updateImportsOnFileMove.enabled": "never",
   "liveServer.settings.donotShowInfoMsg": true,
   "terminal.integrated.rendererType": "dom",
@@ -186,6 +186,6 @@
   "i18n-ally.namespace": true,
   "i18n-ally.pathMatcher": "{locale}/{namespaces}.{ext}",
   "i18n-ally.enabledParsers": ["ts"],
-  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.sourceLanguage": "zh",
   "i18n-ally.enabledFrameworks": ["vue", "react"]
 }
